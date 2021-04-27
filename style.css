@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.glass {
+  background: white;
+  min-height: 75vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  display: flex;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 15%;
+}
+.circle3,
+.circle4,
+.circle5 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle3 {
+  top: -3%;
+  left: 5%;
+}
+.circle4 {
+  bottom: 3%;
+  right: 5%;
+}
+.circle5 {
+  top: 55%;
+  left: -5%;
+}
+.circle6 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle6 {
+  top: 15%;
+  right: 2%;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 2rem;
+  width: 30%;
+}
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+  /* padding: 10px; */
+  /* background-color: #426696; */
+}
+.user-profile h3 {
+  margin: 10px 10px 5px 10px;
+}
+.links {
+  margin-top: 15px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 5px;
+}
+.link h2 {
+  padding: 0rem 2rem;
+  font-size: 20px;
+}
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  color: white;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.pro img {
+  position: absolute;
+  bottom: -15%;
+  left: 40%;
+}
+.pro h2 {
+  padding-left: 10fpx;
+  width: 40%;
+  font-weight: 600;
+  color: white;
+}
+.games {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 3rem;
+  justify-content: space-evenly;
+}
+
+.status {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.games input {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  transition: width 0.5s ease;
+}
+.games input:hover {
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  margin: 10px;
+  padding: 10px 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+.card img {
+  margin-left: -2rem;
+}
+.progress1,
+.progress2,
+.progress3 {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 20%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(191, 230, 230);
+  position: absolute;
+  left: 60%;
+}
+.progress2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(191, 230, 230);
+  position: absolute;
+  left: 40%;
+}
+.progress3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(191, 230, 230);
+  position: absolute;
+  left: 80%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.link img {
+  max-height: 35px;
+  max-height: 35px;
+}
+.pro img {
+  max-height: 120px;
+  max-width: 100px;
+}
+.pro h2 {
+  padding-left: 10px;
+}
+.card-info p {
+  margin-top: -10px;
+}
